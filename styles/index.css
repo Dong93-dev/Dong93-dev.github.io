@@ -623,6 +623,12 @@ nav {
     font-size: 0.8rem;
   }
 
+  .nav-list ul a::after {
+    transition: none;
+    transform: none;
+    content: "";
+  }
+
   /* .nav-list ul {
     list-style: none;
     position: absolute;
