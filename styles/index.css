@@ -24,9 +24,19 @@ header {
   justify-content: center;
   align-items: center;
 }
-
+/* 
 .headerextra {
   display: none;
+} */
+
+header {
+  height: 100%;
+}
+.headerextra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 header nav {
@@ -537,6 +547,10 @@ nav {
 
 .research h1 {
   text-decoration: none;
+}
+
+.otherprojects {
+  background-color: rgba(81, 122, 133, 1);
 }
 
 #contact-form {
