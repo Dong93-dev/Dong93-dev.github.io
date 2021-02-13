@@ -111,6 +111,7 @@ nav .name a {
   font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
+  text-align: center;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -334,8 +335,8 @@ nav {
 #selfie .selfie-bottom .selfintro {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
-  font-size: 0.8rem;
-  font-weight: lighter;
+  font-size: 1rem;
+  font-weight: 800;
   flex: 1 1 1rem;
   min-width: 360px;
   text-align: justify;
@@ -433,7 +434,7 @@ nav {
   transition: all 1s ease-in-out;
   text-align: center;
   border: 2px solid black;
-  padding: 2px;
+  padding: 0px 10px;
   width: 80vw;
   /* display: flex;
   flex-direction: column;
@@ -443,19 +444,26 @@ nav {
   min-width: 10em;
   font-family: "Montserrat", sans-serif;
   color: white;
+  overflow: scroll;
 }
 
 .grid-item h1 {
   font-size: 1.5em;
-  margin: 0.5em 0;
+  margin: 0.5em auto;
+  color: #eff0dc;
+  width: fit-content;
+  text-decoration: underline;
 }
-.grid-item h1::before {
-  content: "";
-  background: url("../images/web-design.png");
-  display: block;
-  width: 40px;
-  height: 40px;
-  float: left;
+
+.grid-item h1:hover {
+  cursor: pointer;
+}
+
+.grid-item h2 {
+  font-size: 1em;
+  text-align: left;
+  padding-bottom: 10px;
+  color: #eff0dc;
 }
 
 .grid-item p {
@@ -463,12 +471,41 @@ nav {
   font-size: 0.8em;
   line-height: 1.5em;
   margin: 0.5em 0;
+  font-weight: 400;
 }
-.grid-item h2 {
-  font-size: 1.2em;
+
+.ncnews {
+  background-color: rgba(81, 122, 133, 1);
+}
+
+.ncnews h1::before {
+  content: "";
+  background: url("../images/nc-news.png");
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-position: 50% 50%;
+  background-size: cover;
+  float: left;
 }
 
 .proj-generate {
+  background-color: rgba(81, 122, 133, 1);
+}
+
+.proj-generate h1::before {
+  content: "";
+  background: url("../images/proj-generate.png");
+  display: block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-position: 50% 50%;
+  background-size: cover;
+  float: left;
+}
+
+.smallreactprojs {
   background-color: rgba(81, 122, 133, 1);
 }
 
